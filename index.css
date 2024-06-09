@@ -54,11 +54,10 @@ p{
   border-color: rgb(226, 226, 226);
   border-radius: 4px;
 }
-
 .navigation {
   margin-left: -1px;
   align-self: stretch;
-  background-color: rgba(255, 184, 78, 0.4);
+  background-color: rgba(255, 255, 255, 1);
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -70,6 +69,18 @@ p{
   max-width: 100%;
   
   gap: var(--gap-xl);
+  margin-bottom: 0;
+}
+.nav-wrapper{
+  align-self: stretch;
+  margin-left: -1px;
+  max-width: 100%;
+}
+.header-spacer{
+  height:1px;
+  background-color: rgb(87, 87, 87);
+  width: 100%;
+  margin: 0;
 }
 .june-2024 {
   align-self: stretch;
@@ -86,19 +97,53 @@ p{
 .content-inner,
 .june-2024-parent {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   max-width: 100%;
+  flex-direction: row;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
-.june-2024-parent {
-  width: 733px;
-  flex-direction: column;
-  gap: 22.5px;
+
+@media (max-width: 1175px) {
+  .june-2024-parent {
+		font-size: var(--font-size-32xl);
+  }
+}
+@media (max-width: 1020px) {
+  .june-2024-parent {
+		font-size: var(--font-size-19xl);
+  }
+}
+@media (max-width: 790px) {
+  .june-2024-parent {
+		font-size: 26px;
+  }
+}
+@media (max-width: 650px) {
+  .june-2024-parent {
+		font-size: 22px;
+  }
+}
+@media (max-width: 520px) {
+  .june-2024-parent {
+		font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .june-2024-parent {
+		font-size: 18px;
+  }
+}
+@media (max-width: 420px) {
+  .june-2024-parent {
+		font-size: 16px;
+  }
 }
 .content-inner {
+  margin-bottom: 0px;
+  margin-top: 0px;
   align-self: stretch;
   flex-direction: row;
-  padding: 0 0 var(--padding-21xl);
+  padding: 0 0 2px;
   box-sizing: border-box;
   text-align: left;
   font-size: var(--title-size);
@@ -149,6 +194,15 @@ p{
   margin: 0;
   position: relative;
   font-size: var(--font-size-5xl);
+  letter-spacing: -0.02em;
+  font-family: var(--font-inder);
+  text-align: justify;
+  color: var(--color-black);
+}
+.vaikarya-has-recently-container-disclamer {
+  margin: 0;
+  position: relative;
+  font-size: var(--font-size-xs);
   letter-spacing: -0.02em;
   font-family: var(--font-inder);
   text-align: justify;
@@ -1023,12 +1077,13 @@ p{
   display: flex;
   align-items: flex-start;
   max-width: 100%;
+  max-height: 120px;
 }
 .website-info {
   width: 670px;
   flex-direction: column;
   justify-content: flex-start;
-  padding: var(--padding-7xs) 0 0;
+  padding: 10px 0 0;
   box-sizing: border-box;
   font-size: var(--font-size-9xl);
 }
@@ -1086,8 +1141,8 @@ p{
 }
 .navigation-footer {
   align-self: stretch;
-  height: 160px;
-  background-color: rgba(247, 161, 33, 0.92);
+  height: 90px;
+  background-color: rgb(229, 108, 27);
   flex-shrink: 0;
   padding: var(--padding-12xs) var(--padding-16xl) var(--padding-8xl);
   box-sizing: border-box;
@@ -1138,11 +1193,13 @@ p{
   }
   .navigation-footer {
     height: auto;
-	gap: var(--gap-22xl);
+	  gap: var(--gap-22xl);
   }
 }
 @media screen and (max-width: 1100px) {
   .content-inner {
+    margin-bottom: 0px;
+    margin-top: 0px;
     padding-left: var(--padding-21xl);
     padding-right: var(--padding-21xl);
     box-sizing: border-box;
@@ -1158,7 +1215,7 @@ p{
     padding-right: 22px;
     box-sizing: border-box;
   }
-  .june-2024,
+  /* .june-2024, */
   .update-on-vaikarya {
     font-size: var(--font-size-19xl);
   }
@@ -1214,7 +1271,7 @@ p{
   }
   .website-link-parent {
     flex-wrap: wrap;
-    gap: var(--gap-6xl);
+    gap: 5px;
   }
   .footer-content {
     gap: var(--gap-mini);
@@ -1230,15 +1287,18 @@ p{
   }
 }
 @media (max-width: 450px) {
-  .june-2024,
+  /* .june-2024, */
   .update-on-vaikarya {
     font-size: var(--font-size-12xl);
   }
   .vaikarya-has-recently-container {
     font-size: var(--font-size-lgi);
   }
+  .vaikarya-has-recently-container-disclamer{
+    font-size: var(--font-size-xs);
+  }
   .vaikarya-update {
-    padding-bottom: 92px;
+    padding-bottom: var(--padding-21xl);
     box-sizing: border-box;
   }
   .investment-environment {
@@ -1331,5 +1391,27 @@ p{
   }
   .navigation-footer {
     gap: 21px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* .june-2024, */
+  .update-on-vaikarya {
+    font-size: var(--font-size-5xl);
+  }
+  .investment-environment {
+    font-size: var(--font-size-5xl);
+  }
+  .vaikaryas-approach-container {
+    font-size: var(--font-size-5xl);
+  }
+  .transformative-changes-container {
+    font-size: var(--font-size-5xl);
+  }
+  .transformative-changes-container1 {
+    font-size: var(--font-size-5xl);
+  }
+  .disclaimer {
+    font-size: var(--font-size-5xl);
   }
 }

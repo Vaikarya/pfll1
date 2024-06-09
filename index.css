@@ -1083,7 +1083,7 @@ p{
   width: 670px;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 10px 0 0;
+  padding: 0 0 0;
   box-sizing: border-box;
   font-size: var(--font-size-9xl);
 }

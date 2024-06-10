@@ -78,7 +78,7 @@ p{
 }
 .header-spacer{
   height:1px;
-  background-color: rgb(87, 87, 87);
+  background-color: #E8E8E8;
   width: 100%;
   margin: 0;
 }
@@ -86,6 +86,7 @@ p{
   align-self: stretch;
   position: relative;
   letter-spacing: -0.02em;
+  color:var(--color-darkslateblue);
 }
 .tag-1-icon {
   width: 688px;
@@ -149,6 +150,7 @@ p{
   font-size: var(--title-size);
   color: var(--color-black);
   font-family: var(--title);
+  padding-left: var(--padding-21xl);
 }
 .update-on-vaikarya {
   margin: 0;
@@ -207,6 +209,7 @@ p{
   font-family: var(--font-inder);
   text-align: justify;
   color: var(--color-black);
+  padding: 0;
 }
 .vaikarya-update {
 	width: 1100px;
@@ -214,7 +217,22 @@ p{
 	flex-direction: row;
 	align-items: flex-start;
 	justify-content: flex-end;
-	padding: 0 var(--padding-10xs) var(--padding-21xl);
+	padding: 0 var(--padding-10xs) 61px;
+	box-sizing: border-box;
+	max-width: 100%;
+	text-align: center;
+	font-size: var(--title-size);
+	color: var(--color-darkslateblue);
+	font-family: var(--title);
+}
+
+.vaikarya-update-disclamer {
+	width: 1100px;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: flex-end;
+	padding: 0 var(--padding-10xs) 0;
 	box-sizing: border-box;
 	max-width: 100%;
 	text-align: center;
@@ -264,7 +282,7 @@ p{
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: 0 var(--padding-10xs) var(--padding-21xl);
+  padding: 0 var(--padding-10xs) 61px;
   box-sizing: border-box;
   max-width: 100%;
   text-align: center;
@@ -363,7 +381,7 @@ p{
   width: 1100px;
   flex-direction: row;
   justify-content: flex-end;
-  padding: 0 var(--padding-10xs) 74px;
+  padding: 0 var(--padding-10xs) 61px;
   box-sizing: border-box;
   text-align: center;
   font-size: var(--title-size);
@@ -435,6 +453,7 @@ p{
   font-weight: 700;
   font-family: inherit;
   display: inline-block;
+  padding: 0;
 }
 .companies-heading {
   align-self: stretch;
@@ -1163,7 +1182,7 @@ p{
 }
 @media screen and (max-width: 1250px) {
   .approach-content-wrapper {
-    padding-bottom: 48px;
+    padding-bottom: 61px;
     box-sizing: border-box;
   }
   .companies-heading,
@@ -1176,7 +1195,7 @@ p{
     gap: var(--gap-12xl);
   }
   .transformative-changes {
-    padding-bottom: var(--padding-21xl);
+    padding-bottom: 61px;
     box-sizing: border-box;
   }
   .name-rect {
@@ -1205,7 +1224,7 @@ p{
     box-sizing: border-box;
   }
   .transformative-changes {
-    padding-bottom: var(--padding-7xl);
+    padding-bottom: 61px;
     box-sizing: border-box;
   }
 }
@@ -1238,7 +1257,7 @@ p{
     gap: var(--gap-mini);
   }
   .approach-content-wrapper {
-    padding-bottom: 31px;
+    padding-bottom: 61px;
     box-sizing: border-box;
   }
   .transformative-changes-container {
@@ -1298,7 +1317,11 @@ p{
     font-size: var(--font-size-xs);
   }
   .vaikarya-update {
-    padding-bottom: var(--padding-21xl);
+    /* padding-bottom: 0; */
+    box-sizing: border-box;
+  }
+  .vaikarya-update-disclamer {
+    padding-bottom: 0;
     box-sizing: border-box;
   }
   .investment-environment {
@@ -1353,7 +1376,7 @@ p{
     font-size: var(--font-size-lgi);
   }
   .transformative-changes {
-    padding-bottom: var(--padding-xl);
+    padding-bottom: 61px;
     box-sizing: border-box;
   }
   .disclaimer {
@@ -1393,9 +1416,8 @@ p{
     gap: 21px;
   }
 }
-
+/*
 @media (max-width: 400px) {
-  /* .june-2024, */
   .update-on-vaikarya {
     font-size: var(--font-size-5xl);
   }
@@ -1413,5 +1435,26 @@ p{
   }
   .disclaimer {
     font-size: var(--font-size-5xl);
+  }
+}
+*/
+@media (max-width: 400px) {
+  .update-on-vaikarya {
+    font-size: var(--font-size-lgi);
+  }
+  .investment-environment {
+    font-size: var(--font-size-lgi);
+  }
+  .vaikaryas-approach-container {
+    font-size: var(--font-size-lgi);
+  }
+  .transformative-changes-container {
+    font-size: var(--font-size-lgi);
+  }
+  .transformative-changes-container1 {
+    font-size: var(--font-size-lgi);
+  }
+  .disclaimer {
+    font-size: var(--font-size-lgi);
   }
 }

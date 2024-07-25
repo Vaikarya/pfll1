@@ -11,10 +11,11 @@ p{
   object-fit: contain;
   min-height: 110px;
 }
-/* .name-eng-icon {
-  width: 475px;
-  max-width: 100%;
-} */
+.main-section-container{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+}
 .name-hin-1-icon {
   width: 246px;
   opacity: 1;
@@ -938,10 +939,10 @@ p{
   font-family: var(--font-inder);
 }
 .content {
-  width: 1290px;
+  /* width: 1290px; */
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-start;
   padding: 0 var(--padding-xl) 9.5px 0;
   gap: var(--gap-6xl);
